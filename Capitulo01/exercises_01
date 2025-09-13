@@ -1,0 +1,68 @@
+String err1(){
+    return "¿Dónde está el error?"; 
+}
+err1();
+string err3(){
+    return "¿String o string?";
+}
+String err2(){
+    return "¿String o string?";
+}
+err2();
+String err3(String who) {
+    return String.format("%s, cuál es el error?",who);
+}
+err3("Código");
+err3("Luis");
+String err4(){
+    return "Este es un error sutil";
+}
+err4();
+String err5(){
+   return "Es un poco menos sutil";
+}
+err5();
+String err6(){
+    return "¡Hola Error!";
+}
+err6();
+String err7(String quien){
+    return String.format("%s ¿Un poco mañoso, no?",quien);
+}
+err7("Luis");
+String adivinaLaPalabra(String emoji1,String emoji2,String emoji3){
+    return String.format("[%s,%s,%s]",emoji1,emoji2,emoji3);
+}
+adivinaLaPalabra("🙂","🐈","🐀");
+String konnichiwa(String dare){
+    return String.format("こんにちは %s",dare);
+}
+konnichiwa("Luis Carlos");
+String separador(){
+    return "<<<>>>";
+}
+separador();
+String vocales(){
+    return "aeiou";
+}
+vocales();
+tituloAdornado("Java");
+tituloAdornado(">>> <<<");
+tituloAdornado("A + B");
+adornar("Java");
+String adornar(String frase){
+    return String.format("<=%s=>",frase);
+}
+adornar("Java");
+concatenar("Hola","Mundo");
+String concatenar(String s1,String s2){
+    return String.format("[%s+%s]",s1,s2);
+}
+concatenar("Hola","Mundo");
+concatenar("A","Z");
+String tituloAdornado(String valor){
+    return String.format("<<< %s >>>",valor);
+}
+tituloAdornado("Java");
+tituloAdornado(">>> <<<");
+tituloAdornado("A + B");
